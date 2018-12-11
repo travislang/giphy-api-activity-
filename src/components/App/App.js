@@ -14,14 +14,13 @@ class App extends Component {
     }
     render() {
         let picture;
-        console.log(this.props.random.image_url);
-        
         if (this.props.random.image_url) {
             picture = <div><img src={this.props.random.image_url} alt='random gif' /></div>
         }
         else {
             picture = <div></div>
         }
+        
         return (
             <div>
                 <header className="App-header">
